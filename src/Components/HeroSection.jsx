@@ -42,7 +42,7 @@ const HeroSection = () => {
           </motion.p>
         </div>
 
-        {/* Right section */}
+
 
         <Spline
           className="absolute xl:right-[-28%] right-0 top-[-20%] lg:top-0"

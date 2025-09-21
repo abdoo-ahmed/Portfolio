@@ -55,7 +55,7 @@ const Header = () => {
           )}
         </nav>
 
-        {/* social media icons  */}
+
 
         <div className="md:flex hidden items-center space-x-4">
           <motion.a
@@ -142,7 +142,7 @@ const Header = () => {
           </motion.button>
         </div>
 
-        {/* Responsive Mobile Menu*/}
+
 
         <div className="md:hidden flex items-center">
           <motion.button
@@ -159,7 +159,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu*/}
+
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{
@@ -176,7 +176,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 key={index}
                 className="text-gray-300 font-medium py-2"
-                href="#"
+                href={`#${item}`}
               >
                 {item}
               </a>
@@ -222,7 +222,7 @@ const Header = () => {
         </div>
       </motion.div>
 
-      {/* Contact Form  */}
+
 
       <AnimatePresence>
         {ContactFromOpen && (
@@ -257,10 +257,13 @@ const Header = () => {
                 </button>
               </div>
 
-              {/* input form */}
 
-              <form className="space-y-4" action="">
-                <div className="">
+              <form
+                className="space-y-4"
+                action="https://formspree.io/f/mblzrdew"
+                method="POST"
+              >
+                <div>
                   <label
                     htmlFor="name"
                     className="block text-sm text-gray-300 font-medium mb-1"
@@ -270,11 +273,14 @@ const Header = () => {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     placeholder="Your Name"
+                    required
                     className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500 bg-gray-700 focus:border-violet-500"
                   />
                 </div>
-                <div className="">
+
+                <div>
                   <label
                     htmlFor="email"
                     className="block text-sm text-gray-300 font-medium mb-1"
@@ -284,11 +290,14 @@ const Header = () => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="Enter your email"
+                    required
                     className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500 bg-gray-700 focus:border-violet-500"
                   />
                 </div>
-                <div className="">
+
+                <div>
                   <label
                     htmlFor="message"
                     className="block text-sm text-gray-300 font-medium mb-1"
@@ -298,7 +307,9 @@ const Header = () => {
                   <textarea
                     rows="4"
                     id="message"
+                    name="message"
                     placeholder="how can we help you"
+                    required
                     className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500 bg-gray-700 focus:border-violet-500"
                   />
                 </div>

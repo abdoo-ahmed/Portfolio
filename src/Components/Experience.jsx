@@ -64,7 +64,7 @@ const ExperienceSection = () => {
       className="min-h-screen bg-gradient-to-b from-gray-950 to-purple-900 
                  flex flex-col items-center justify-center px-6 relative overflow-hidden"
     >
-      {/* Title */}
+
       <h2
         ref={titleRef}
         className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text 
@@ -74,7 +74,6 @@ const ExperienceSection = () => {
         Professional Experience
       </h2>
 
-      {/* Timeline */}
       <div className="relative z-10 space-y-12 max-w-3xl">
         {experiences.map((exp, index) => (
           <div
@@ -82,7 +81,7 @@ const ExperienceSection = () => {
             ref={(el) => (itemsRef.current[index] = el)}
             className="relative pl-12 border-l-4 border-purple-400"
           >
-            {/* Icon */}
+            
             <span
               className="absolute -left-6 top-0 flex items-center justify-center 
                              w-10 h-10 rounded-full bg-purple-600 shadow-lg"
@@ -90,12 +89,12 @@ const ExperienceSection = () => {
               <FaBriefcase className="text-white text-xl" />
             </span>
 
-            {/* Role + Company */}
+            
             <h3 className="text-2xl font-bold text-purple-300">
               {exp.role} <span className="text-gray-300">– {exp.company}</span>
             </h3>
 
-            {/* Points */}
+            
             <ul className="mt-3 space-y-2 list-disc list-inside text-gray-200">
               {exp.points.map((point, i) => (
                 <li key={i} className="leading-relaxed">
@@ -107,7 +106,7 @@ const ExperienceSection = () => {
         ))}
       </div>
 
-      {/* Stars BG */}
+      
       <div className="absolute inset-0 overflow-hidden z-10 pointer-events-none">
         {[...Array(40)].map((_, i) => (
           <span

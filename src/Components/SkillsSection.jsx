@@ -38,7 +38,7 @@ const SkillsSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animation for title
+    
     gsap.fromTo(
       titleRef.current,
       { y: 100, opacity: 0 },
@@ -55,7 +55,7 @@ const SkillsSection = () => {
       }
     );
 
-    // Animation for skills (staggered)
+
     gsap.fromTo(
       skillsRef.current,
       { y: 50, opacity: 0, scale: 0.8 },
@@ -64,7 +64,7 @@ const SkillsSection = () => {
         opacity: 1,
         scale: 1,
         duration: 0.8,
-        stagger: 0.2, // يخلي العناصر تظهر واحدة ورا التانية
+        stagger: 0.2,
         ease: "back.out(1.7)",
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -81,7 +81,7 @@ const SkillsSection = () => {
       id="Skills"
       className="min-h-screen bg-gradient-to-b from-black to-violet-900 relative overflow-hidden flex flex-col items-center justify-center px-6"
     >
-      {/* العنوان */}
+      
       <h2
         ref={titleRef}
         className="relative z-10 text-4xl md:text-6xl font-bold text-transparent bg-clip-text 
@@ -91,7 +91,6 @@ const SkillsSection = () => {
         My Skills
       </h2>
 
-      {/* الجريد */}
       <div className="relative z-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
         {skills.map((skill, index) => (
           <div

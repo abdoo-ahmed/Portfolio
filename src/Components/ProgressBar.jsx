@@ -17,7 +17,7 @@ const ProgressBar = () => {
         end: "bottom bottom",
         scrub: 0.3,
         onUpdate: (self) => {
-          // Optional: You can add additional effects
+          
           const progress = self.progress.toFixed(2);
 
           if (progress > 0.75) {

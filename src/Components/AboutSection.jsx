@@ -110,18 +110,18 @@ const AboutSection = () => {
           className="absolute lg:bottom-[-20rem] md:bottom-[-10rem] bottom-[-20rem] left-0 w-full flex md:flex-row flex-col justify-between lg:px-24 px-5 items-center opacity-0"
         >
           <h3 className="text-sm md:text-2xl font-bold text-purple-200 z-50 lg:max-w-[45rem] max-w-[27rem] tracking-wider md:mt-20 sm:mt-[-40rem] mt-[-32rem]">
-            I am a passionate web developer with a knack for creating dynamic
-            and responsive web applications. With a strong foundation in
-            front-end technologies, I strive to build seamless user experiences.
-            My journey in web development has equipped me with skills in HTML5,
-            CSS3, JavaScript, Bootstrap, Tailwind , jQuery, and React. I am
-            constantly learning and adapting to new technologies to stay ahead
-            in this ever-evolving field.
+            Hi, I’m Abdelrahman Ahmed — a passionate web developer dedicated to
+            crafting dynamic and responsive web applications. I specialize in
+            front-end technologies and aim to deliver seamless user experiences
+            that leave a lasting impression. My toolkit includes HTML5, CSS3,
+            JavaScript, Bootstrap, Tailwind, jQuery, and React. I’m always
+            exploring new technologies and refining my skills to stay ahead in
+            the fast-paced world of web development.
           </h3>
           <img
             className="lg:h-[40rem] md:h-[25rem] h-[20rem] mix-blend-lighten"
-            src="../../public/Images/1753132573507-removebg-preview.png"
-            alt=""
+            src="/Portfolio/Images/1753132573507-removebg-preview.png"
+            alt="My image"
           />
         </div>
       </section>
