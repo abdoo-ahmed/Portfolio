@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import MyImg from "../../public/Images/Abdo Ahmed.png";
 const AboutSection = () => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
@@ -120,7 +120,7 @@ const AboutSection = () => {
           </h3>
           <img
             className="lg:h-[40rem] md:h-[25rem] h-[20rem] mix-blend-lighten"
-            src="/Portfolio/Images/1753132573507-removebg-preview.png"
+            src={MyImg}
             alt="My image"
           />
         </div>
