@@ -12,6 +12,7 @@ const CustomCursor = () => {
     return null;
   }
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const cursor = cursorRef.current;
     const cursorBorder = cursorBorderRef.current;

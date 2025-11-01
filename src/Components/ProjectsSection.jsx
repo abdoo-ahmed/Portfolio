@@ -20,48 +20,55 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 202842.png",
-      title: "FreshCart E-commerce",
-      demo: "https://github.com/abdoo-ahmed/E-commerc-App",
-      live: "https://bright-liger-da2b44.netlify.app",
-    },
-    {
-      id: 3,
       imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 203133.png",
       title: "Admin Dashboard",
       demo: "https://github.com/abdoo-ahmed/DashBoard",
       live: "https://chic-ganache-dec62c.netlify.app",
     },
     {
+      id: 3,
+      imageSrc: "/Portfolio/Images/Screenshot 2025-11-01 070126.png",
+      title: "Food App (Yummy)",
+      demo: "https://github.com/abdoo-ahmed/Yummy",
+      live: "https://incandescent-frangipane-ce578b.netlify.app/",
+    },
+    {
       id: 4,
+      imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 202842.png",
+      title: "FreshCart E-commerce",
+      demo: "https://github.com/abdoo-ahmed/E-commerc-App",
+      live: "https://bright-liger-da2b44.netlify.app",
+    },
+    {
+      id: 5,
       imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 203452.png",
       title: "Dunkin Donuts Clone",
       demo: "https://github.com/abdoo-ahmed/Donuts_WebMaster",
       live: "https://abdoo-ahmed.github.io/Donuts_WebMaster",
     },
     {
-      id: 5,
+      id: 6,
       imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 203954.png",
       title: "Weather App",
       demo: "https://github.com/abdoo-ahmed/weather",
       live: "https://abdoo-ahmed.github.io/weather",
     },
     {
-      id: 6,
+      id: 7,
       imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 204340.png",
       title: "Products Management System",
       demo: "https://github.com/abdoo-ahmed/Products-management-system",
       live: "https://abdoo-ahmed.github.io/Products-management-system",
     },
     {
-      id: 7,
+      id: 8,
       imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 204629.png",
       title: "Movies App",
       demo: "https://github.com/abdoo-ahmed/Movies",
       live: "https://abdoo-ahmed.github.io/Movies",
     },
     {
-      id: 8,
+      id: 9,
       imageSrc: "/Portfolio/Images/Screenshot 2025-09-15 204912.png",
       title: "Solar Company Landing-Page",
       demo: "https://github.com/abdoo-ahmed/Solar-Company-Landing-Page",
@@ -187,7 +194,7 @@ const ProjectsSection = () => {
     <section
       ref={sectionRef}
       id="Projects"
-      className=" relative pt-20 bg-[#f6f6f6] overflow-hidden"
+      className="relative pt-20 bg-[#f6f6f6] overflow-hidden"
     >
       <div className="container mx-auto px-4 mb-16 relative z-10">
         <h2
